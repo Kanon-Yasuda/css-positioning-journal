@@ -38,9 +38,13 @@ body {
    - Add padding and border radius
 ============================================ */
 
-#main-container {
-    /* YOUR CODE HERE */
-    
+main-container {
+
+        background-color:white;
+        max-width:  960px; 
+        margin: auto;
+        border: 30px black;
+       
 }
 
 /* ============================================
@@ -50,9 +54,10 @@ body {
    background color, and text alignment
 ============================================ */
 
-#header-box {
-    /* YOUR CODE HERE */
-    
+header-box {
+    header{padding: 40px;}
+    text-align: center;
+    background-color: red;
 }
 
 /* ============================================
@@ -62,13 +67,15 @@ body {
    and content area (75%)
 ============================================ */
 
-#sidebar {
-    /* YOUR CODE HERE */
+sidebar {
+    float: right;
+    width: 25%;
     
 }
 
-#content-area {
-    /* YOUR CODE HERE */
+content-area {
+    float: left;
+    width: 75%;
     
 }
 
