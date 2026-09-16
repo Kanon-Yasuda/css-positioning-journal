@@ -1,3 +1,4 @@
+
 /* ============================================
    HENRY'S JOURNAL - CSS POSITIONING EXERCISE
    STARTER TEMPLATE - FILL IN THE BLANKS!
@@ -6,7 +7,7 @@
    Complete the TODOs below to style the journal.
    Refer to instructions for detailed guidance.
    
-   Author: [Your Name Here]
+   Author: [Isaac Owusu]
    Date: 02/02/2026
 ============================================ */
 
@@ -39,8 +40,12 @@ body {
 ============================================ */
 
 #main-container {
-    /* YOUR CODE HERE */
-    
+    background-color: white;
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 12px;
+    border: 4px solid green;
 }
 
 /* ============================================
@@ -51,8 +56,11 @@ body {
 ============================================ */
 
 #header-box {
-    /* YOUR CODE HERE */
-    
+    background-color: #f8d7da;
+    border: 3px solid red;
+    padding: 25px;
+    text-align: center;
+    margin-bottom: 20px;
 }
 
 /* ============================================
@@ -63,13 +71,18 @@ body {
 ============================================ */
 
 #sidebar {
-    /* YOUR CODE HERE */
-    
+    float: left;
+    width: 25%;
+    background-color: #f0f0f0;
+    padding: 20px;
+    border: 2px solid #ccc;
+    border-radius: 8px;
 }
 
 #content-area {
-    /* YOUR CODE HERE */
-    
+    float: left;
+    width: 75%;
+    padding-left: 20px;
 }
 
 /* ============================================
@@ -79,8 +92,9 @@ body {
 ============================================ */
 
 #main-container::after {
-    /* YOUR CODE HERE */
-    
+    content: "";
+    display: table;
+    clear: both;
 }
 
 /* ============================================
@@ -90,14 +104,24 @@ body {
 ============================================ */
 
 .journal-entry {
-    /* YOUR CODE HERE */
-    
+    background-color: #eaf4ff;
+    border: 2px solid #3498db;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    overflow: hidden;
 }
 
 .entry-image {
-    /* YOUR CODE HERE */
-    /* Add picture frame effect */
-    
+    width: 180px;
+    height: auto;
+    float: left;
+    margin-right: 20px;
+    margin-bottom: 10px;
+    border: 5px solid white;
+    outline: 2px solid #555;
+    padding: 3px;
+    border-radius: 6px;
 }
 
 /* ============================================
@@ -107,6 +131,25 @@ body {
 ============================================ */
 
 @media (max-width: 768px) {
-    /* YOUR CODE HERE */
-    
+
+    #sidebar {
+        float: none;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    #content-area {
+        float: none;
+        width: 100%;
+        padding-left: 0;
+    }
+
+    .entry-image {
+        float: none;
+        display: block;
+        width: 100%;
+        max-width: 300px;
+        margin: 0 auto 15px auto;
+    }
+
 }
